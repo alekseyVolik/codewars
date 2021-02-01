@@ -8,4 +8,4 @@ def break_camel_casing(text):
 
 
 if __name__ == '__main__':
-    print(break_camel_casing('breakCamelCase'))
+    pass
