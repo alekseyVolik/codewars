@@ -29,5 +29,14 @@ def calc(string):
     return sum([int(num) - 1 for num in ''.join([str(ord(letter)) for letter in string]) if num == '7'])
 
 
+def move_ten(st):
+    """
+    Shift each letter to ten position to right
+
+    link: https://www.codewars.com/kata/57cf50a7eca2603de0000090/train/python
+    """
+    return ''.join([chr(97 + (ord(letter) - 97 + 10) % 26) for letter in st])
+
+
 if __name__ == '__main__':
     pass
