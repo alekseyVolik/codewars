@@ -38,5 +38,14 @@ def move_ten(st):
     return ''.join([chr(97 + (ord(letter) - 97 + 10) % 26) for letter in st])
 
 
+def max_re_digit(num):
+    """
+    Rearrange input digit to get maximum number
+
+    link: https://www.codewars.com/kata/563700da1ac8be8f1e0000dc/train/python
+    """
+    return int(''.join(sorted(str(num), reverse=True))) if (99 < num < 1000) else None
+
+
 if __name__ == '__main__':
     pass
