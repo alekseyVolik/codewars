@@ -47,5 +47,16 @@ def max_re_digit(num):
     return int(''.join(sorted(str(num), reverse=True))) if (99 < num < 1000) else None
 
 
+def flatten_me(lst):
+    """
+    Takes a single list as an argument and returns a flattened list
+
+    link: https://www.codewars.com/kata/55a5bef147d6be698b0000cd/train/python
+    """
+    smooth_list = []
+    [smooth_list.extend(item) if isinstance(item, list) else smooth_list.append(item) for item in lst]
+    return smooth_list
+
+
 if __name__ == '__main__':
     pass
