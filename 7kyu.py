@@ -58,5 +58,14 @@ def flatten_me(lst):
     return smooth_list
 
 
+def switcheroo(string):
+    """
+    Switch a to b and b to a in input string
+
+    link: https://www.codewars.com/kata/57f759bb664021a30300007d/train/python
+    """
+    return ''.join(['b' if ch == 'a' else ('a' if ch == 'b' else ch) for ch in string])
+
+
 if __name__ == '__main__':
     pass
